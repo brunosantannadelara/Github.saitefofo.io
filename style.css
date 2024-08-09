@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('img./images.jpeg'); /* Substitua pelo caminho real da imagem */
+    background-size: cover; /* Faz com que a imagem cubra todo o fundo do body */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.quiz-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center; /* Centraliza o texto dentro do container */
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+#options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Espaço entre os botões */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* Largura completa dentro do container */
+    text-align: center; /* Centraliza o texto dentro dos botões */
+}
+
+button:nth-of-type(1) {
+    background-color: #28a745;
+}
+
+button:nth-of-type(2) {
+    background-color: #ffc107;
+}
+
+button:nth-of-type(3) {
+    background-color: #dc3545;
+}
+
+button:nth-of-type(4) {
+    background-color: #17a2b8;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#congratulations-message, #result-message {
+    color: green;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center; /* Centraliza o texto das mensagens */
+}
